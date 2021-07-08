@@ -1,0 +1,46 @@
+<div class="container">
+  <p mat-title>Pluck</p>
+  <div class="row">
+    <div class="col-4">
+      <strong>Ex-01</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>pluck :</strong>
+        by property
+      </p>
+      <br />
+      <hr />
+      <table>
+
+        <tr><th>Name</th></tr>
+        <tr *ngFor="let i of data"><td>{{i}}</td></tr>
+       </table>
+    </div>
+
+    <div class="col-4 ml-10">
+      <strong>Ex-02</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>pluck:</strong>
+        by nested property
+      </p>
+      <br />
+      <hr/>
+      <table>
+
+        <tr><th>job=>title</th></tr>
+        <tr *ngFor="let i of data2"><td>{{i}}</td></tr>
+       </table>
+    </div>
+    <div class="col-4 ml-10">
+      <strong>Ex-01</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>Map :</strong>
+        Map Object Data
+      </p>
+      <br />
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+mat-grid-tile{
+background-color:whitesmoke;
+transition: all;
+transition-delay: .2s;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+
+}
+mat-grid-tile:hover{
+  background-color: blue;
+  color:whitesmoke;
+  font-weight: 500;
+  }
+

@@ -1,0 +1,48 @@
+<ngx-loading-bar></ngx-loading-bar>
+<div class="container">
+  <h2>DebounceTime & DistinctUntilChanged</h2>
+  <div class="row">
+    <div class="col-4 mt-10">
+      <strong>
+        Ex-01:
+        <span class="text-success">Debouncetime</span>
+      </strong>
+      <br/>
+
+      <mat-form-field color="primary" apperance="outline">
+        <mat-label>Message</mat-label>
+        <input
+          type="search"
+          matInput
+          #myInput
+          placeholder="Enter the message"
+        />
+      </mat-form-field>
+      <br />
+      <span *ngIf="reqData != null">
+        Requested data:
+        <strong class="text-danger">{{ reqData }}</strong>
+      </span>
+    </div>
+    <div class="col-4 mt-10 ml-10">
+      <strong>
+        Ex-02:
+        <span class="text-success">DebounceUntilChange</span>
+      </strong>
+      <hr />
+      <mat-form-field color="primary" apperance="outline">
+        <mat-label>Message</mat-label>
+        <input
+          type="search"
+          matInput
+          #myInput2
+          placeholder="Enter the message"
+        />
+      </mat-form-field>
+      <span *ngIf="reqData2!= null">
+        Requested data:
+        <strong class="text-danger">{{ reqData2 }}</strong>
+      </span>
+    </div>
+  </div>
+</div>

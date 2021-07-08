@@ -1,1 +1,174 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.pink{
+  background-color: pink;
+}
+.blue{
+  background-color: blue;
+}
+.col-9{
+  width:75%;
+}
+
+hr{
+  margin-right: 105px;
+
+
+}
+.mt-20{
+  margin-top: 20px;
+}
+.mt-15{
+  margin-top: 15px;
+}
+.ml-15{
+  margin-left: 15px;
+}
+
+
+.mb-10{
+  margin-bottom: 10px;
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  }
+
+  .text-success{
+   color:green;
+  }
+  .text-danger{
+color:#d9534f;
+  }
+
+  mat-list mat-list-item{
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+
+  }
+
+  mat-list.error mat-list-item{
+    border:1px solid red;
+    background:rgba(255,0,0,0.08);
+    color:red;
+    }
+
+
+
+    mat-list.completed mat-list-item{
+      border:1px solid #3dd843;
+      background:rgba(61,216,67,0.08);
+      color:green;
+
+      }
+
+
+      table tr{
+        background-color: #f8f8f8;
+       display: block;
+       margin-bottom: 10px;
+       padding:10px;
+       padding-right: 200px;
+     //  border-bottom:1px solid blue ;
+       border-radius: 5px;
+
+        }
+
+
+.col-12{
+  width:100%;
+}
+.col-1{
+  width:8.33%
+}
+.col-3{
+width:25%
+}
+.col-6{
+  width:49.98%
+}
+.col-4{
+width:33.33%
+}
+
+.container
+{
+  width:95vw;
+  margin:auto;
+}
+.mt-10{
+margin-top:10px;
+}
+
+.bg-light{
+  background-color:#f7f7f7;
+  font-size: large;
+}
+.px-3{
+ padding-left: 10px;
+ padding-right: 10px;
+}
+.rounded{
+ border-radius: 5px;
+}
+
+.ml-10{
+  margin-left:10px;
+}
+
+
+.success{
+  background:rgba(61,216,67,0.08);
+  color:green;
+}
+
+.error{
+  background:rgba(255,0,0,0.08);
+  color:red;
+}
+.primary{
+   background-color: #0275d8;
+}
+
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner .8s linear infinite;
+}
+
+
+
+
+

@@ -1,0 +1,71 @@
+<div class="container">
+  <p>Custom Observable</p>
+  <div class="row">
+    <div class="col-6">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Ex:01 (Manual)</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <mat-list
+            role="list"
+            [ngClass]="this.techStatus == 'completed' ? 'completed' : 'error'"
+            id="elContainer"
+          ></mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-6 ml-10">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Ex-02 (Custom Interval Observable)</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+          <mat-list
+            role="list"
+            [ngClass]="this.techStatus2 == 'completed' ? 'completed' : 'error'"
+            id="elContainer2"
+          ></mat-list>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div class="row mt-10">
+    <div class="col-12">
+      <p class="bg-light px-3 rounded" style="padding: 10px;">
+        <strong>Random Names :</strong>
+        'Anup', 'Shekhar', 'Sharma', 'John', 'Alex', 'Robert'
+      </p>
+      <hr />
+      <p>
+        Current Name:
+        <strong style="color: green;">{{ names }}</strong>
+      </p>
+      <p
+        style="
+          font-size: medium;
+          padding: 5px;
+          display: inline;
+          border-radius: 5px;
+        "
+        [ngClass]="
+          nameStatus == 'completed'
+            ? 'success'
+            : nameStatus == 'error'
+            ? 'error'
+            : 'primary'
+        "
+      >
+      {{nameStatus == 'completed'
+      ? 'Success'
+      : nameStatus == 'error'
+      ? 'Error'
+      : 'Running.....'}}
+
+      </p>
+    </div>
+  </div>
+</div>

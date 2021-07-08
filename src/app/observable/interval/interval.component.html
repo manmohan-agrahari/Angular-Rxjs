@@ -1,0 +1,38 @@
+<div class="container">
+  <h3 class="mat-title">Interval</h3>
+  <br />
+  {{ obsMsg }}
+  <div class="row">
+  <div class="col-3">
+    <mat-card>
+      <mat-card-title>User1</mat-card-title>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <ul id="elConatiner1"></ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-3 ml-10">
+    <mat-card>
+      <mat-card-title>User2</mat-card-title>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <ul id="elConatiner2"></ul>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-3 ml-10">
+    <mat-card>
+      <mat-card-title>User3</mat-card-title>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <ul id="elConatiner3"></ul>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent"(click)=unsubscribleEvent()>
+          <span >{{unsubscribe ? 'Subscribe' :'UnSubscribe'}}</span></button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+</div>

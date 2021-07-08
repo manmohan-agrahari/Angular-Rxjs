@@ -1,0 +1,69 @@
+<div class="container">
+  <p mat-title>Pluck</p>
+  <div class="row">
+    <div class="col-4">
+      <strong>Ex-01</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>Filter:</strong>
+        by length
+      </p>
+      <hr />
+      <table>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+        <tr *ngFor="let item of data">
+          <td>{{item.id}}</td>
+          <td >{{item.name}}</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="col-4 ml-10">
+      <strong>Ex-01</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>Filter:</strong>
+        by Gender
+      </p>
+      <hr />
+      <table>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+      </tr>
+        <tr *ngFor="let item of data2">
+          <td>{{item.id}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.gender}}</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="col-4 ml-10">
+      <strong>Ex-01</strong>
+      <mat-divider></mat-divider>
+      <p class="bg-light px-3 rounded" style="padding: 10px; margin-top: 10px;">
+        <strong>Filter:</strong>
+        by nth item
+      </p>
+      <hr />
+      <table>
+        <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+        <tr *ngFor="let item of data3">
+          <td>{{item.id}}</td>
+          <td >{{item.name}}</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "clients":[
+   { "id":"1",
+     "name":"manmohan",
+     "age":24,
+     "email":"manmohan.agrahari@gmail.com"
+   }
+  ]
+}

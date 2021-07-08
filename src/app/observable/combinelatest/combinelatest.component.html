@@ -1,0 +1,53 @@
+<div class="mt-10">
+  <h2>CombineLatest & withLatestFrom</h2>
+  <br />
+  <div class="row">
+    <div class="col-3">
+      <strong>Names</strong>
+      <hr />
+      <!--
+      <mat-form-field appearance="fill" >
+        <mat-label>Names</mat-label>
+        <mat-select (selectionChange)="change($event)">
+          <mat-option *ngFor="let name of names" [value]="name">
+            {{ name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    -->
+    <select  #name style="font-size: 1rem; padding:0; padding-bottom: 10px; border:none; border-bottom: 2px solid blue; background-color: white; outline: none;">
+      <option *ngFor="let name of names"  [value]="name">{{name}}</option>
+    </select>
+      <br />
+      <br />
+      <strong>Colors</strong>
+      <hr />
+    <!---
+      <mat-form-field appearance="fill">
+        <mat-label>Colors</mat-label>
+
+        <mat-select #color>
+          <mat-option *ngFor="let color of colors" [value]="color">
+            {{ color }}
+          </mat-option>
+        </mat-select>
+
+
+      </mat-form-field>
+    -->
+    <select  #color style="font-size: 1rem; padding:0; padding-bottom: 10px; border:none; border-bottom: 2px solid blue; background-color: white; outline: none;">
+      <option *ngFor="let color of colors"  [value]="color">{{color}}</option>
+    </select>
+    </div>
+
+    <div class="col-9 ml-10">
+      <strong>CombineLatest</strong>
+      <hr>
+      <div class="wrapper">
+        <div class="red">Anup</div>
+        <div class="green">Shekhar</div>
+        <div class="blue">Sharma</div>
+      </div>
+    </div>
+  </div>
+</div>
